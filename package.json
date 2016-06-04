@@ -20,6 +20,7 @@
     "postinstall": "node tools/scripts/postinstall.js"
   },
   "dependencies": {
+    "mongodb": "latest",
     "angular": "^1.5.5",
     "angular-bootstrap": "^0.12.2",
     "angular-cookies": "^1.5.2",
