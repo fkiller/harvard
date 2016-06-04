@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 
 var env = process.env.NODE_ENV || 'development';
+process.env.MONGOHQ_URL = "mongodb://wdong:Aa123412@ds015403.mlab.com:15403/heroku_xzbqnx3k";
 /*
 var defaultTasks = ['clean', 'jshint', 'csslint','serve','watch']; // initialize with development settings
 if (env === 'production') { var defaultTasks = ['clean', 'cssmin', 'uglify', 'serve', 'watch'];}
