@@ -36,7 +36,8 @@ module.exports = function(app, db) {
     level: 9
   }));
   
-  console.log('config.root:' + config.root);
+  console.log('config:');
+  console.log(config);
 
   // Enable compression on bower_components
   app.use('/bower_components', express.static(config.root + '/bower_components'));
