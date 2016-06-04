@@ -29,7 +29,7 @@ if ((cluster.isMaster) &&
     var cpuCount = process.env.CPU_COUNT || require('os').cpus().length;
 
     // Create a worker for each CPU
-    for (var i = 0; i < cpuCount; i += 1) {
+    for (var i = 0; i < 1; i += 1) { // Single instance for small sandbox
         console.log ('forking ',i);
         cluster.fork();
     }
