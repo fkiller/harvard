@@ -35,6 +35,8 @@ module.exports = function(app, db) {
     // no compression and 9 is best compression, but slowest
     level: 9
   }));
+  
+  console.log('config.root:' + config.root);
 
   // Enable compression on bower_components
   app.use('/bower_components', express.static(config.root + '/bower_components'));
